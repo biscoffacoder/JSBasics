@@ -1,0 +1,42 @@
+Primtive types - 
+Number, String, Boolean, Null, Undefined, Symbol and BigInt.
+1. Number - One number type, positive, negative, whole, decimal numbers.
+   2 ** 3 = 8, 5 ** 2 = 25.
+   NaN - Not a number: numeric value that is not a number. ex - 0/0, 1+NaN.
+   Infinity - 1/0, can't store this as a number. 
+   -Infinity -> -1/0
+   0 - positive zero
+   -0 -> negative zero
+
+2. Boolean - true/ false. True=1,False=0;
+
+3. String - text, strings of characters. "", '', '""', "''". They are immutable. Which means existing string value if changed, it'll create a new one.
+   They are indexed starting from 0. Properties - .length,stringVal[0]; If outof bounds value is tried to access, we'll get undefined
+   Methods - 
+    Check MDN for all. 
+    toUpperCase(), toLowerCase(), trim(), slice(0,5), slice(5) startsWith("a"), indexOf("a"), replace("a","b"). etc 
+    If let ba = "Baseball" - ba.slice(2); --> seball, ba.slice(0,4) --> Base, valo.slice(20) --> ""
+    let fed = valo.replace('ball','bat') --> Basebat
+    If indexOf is not found = -1.
+   String Escapes - \n = new Line, \' = allows to add ', \"= allows to add ", \t = adds tab in front, \\ = adds a \,
+   String Template Literals - ``. Using `` allows us to add other variables like - `Hello ${age}`. 
+
+4. Null - Intentional abscence of any value, and it must be assigned. let age=null;, age=9;
+
+5. Undefined - Variables that do not have an assigned value. let color; console.log(color); // undefined
+
+-- Math.object - Contains properties and methods for mathematical constants and functions. Ex - Math.PI, Math.round(5.9), .floor(), .abs(), .pow(), cos()..etc
+                 Math.random() - provides us a random decimal between 0 nd 1
+-- typeof - gives the type of the variable. let age =99; typeof age // number. typeof null // object. typeof undefined // undefined
+-- parseInt - Convert a string to Int. parseInt('24')// 24. 
+-- parseFloat - convert a string to a float value.
+Variables-
+ Stores values. Keywords - let, const, var. VAR is no longer recommended to use.  
+ Variables can change theor types. let bool=true, bool=90; This wont cause an issue but is not recommended.
+ let someName= "value". const variable1 = "das".
+ const noChange= 80; Once the variable is initialized, it cannot be changed. const age=90; age=age+1//error
+ Until re assigned, JS does not update the value of the variable. let age=70; age=age+1; will update the values.
+ Reserved words cannot be used to create JS variables. Shorthand style for addition updates => age +=10;
+
+ Unary Operators = age++;/age--/--age/++age. It directly changes the original value.
+
